@@ -29,7 +29,7 @@ To run the interpreter, type in your terminal:
 $ build/lang.o
 ```
 
-This language only recognizes a few symbols and operations, such as add, subtract, print and exit.
+This language only recognizes a few symbols and operations, such as add, subtract, print, etc.
 
 - Adding
 
@@ -41,6 +41,24 @@ print 1 + 2;
 
 ```
 print 2 - 1;
+```
+
+- Multiplying
+
+```
+print 5 * 2;
+```
+
+- Dividing
+
+```
+print 10 / 2;
+```
+
+- Clearing the screen
+
+```
+clear;
 ```
 
 - Assignment
