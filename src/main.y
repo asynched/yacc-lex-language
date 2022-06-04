@@ -41,6 +41,8 @@ assignment : identifier '=' exp     {update_symbol_value($1, $3);}
 exp     : term                      {$$ = $1;}
         | exp '+' term              {$$ = $1 + $3;}
         | exp '-' term              {$$ = $1 - $3;}
+        | exp '*' term              {$$ = $1 * $3;}
+        | exp '/' term              {$$ = $1 / $3;}
         ;
 
 term    : number                    {$$ = $1;}
